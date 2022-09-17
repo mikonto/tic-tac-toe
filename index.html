@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="o"></div>
-        <div class="o"></div>
-        <div class="x"></div>
-        <div class="o"></div>
-        <div class="x"></div>
-        <div class="x"></div>
-        <div class="o"></div>
-        <div class="x"></div>
-        <div class="o"></div>
+    <main>
+        <div class="messages">
+            <p>Write names and press "Start game"</p>
+        </div>
+    <div class="grid-container">
+        <div id="0" class="grid"></div>
+        <div id="1" class="grid"></div>
+        <div id="2" class="grid"></div>
+        <div id="3" class="grid"></div>
+        <div id="4" class="grid"></div>
+        <div id="5" class="grid"></div>
+        <div id="6" class="grid"></div>
+        <div id="7" class="grid"></div>
+        <div id="8" class="grid"></div>
     </div>
 
+    <div class="interface">
+        <form action="#">
+            <label for="player-one">Player X:</label><br>
+            <input type="text" id="player-one" name="player-one" placeholder="Mikael" required><br>
+            <label for="player-two">Player O:</label><br>
+            <input type="text" id="player-two" name="player-two" placeholder="Spede" required><br><br>
+            <input type="submit" value="Start game" id="start">
+            <input type="button" value="Reset" id="reset">
+        </form> 
+    </div>
+
+    </main>
+    <footer>
+        <p>By Mikonto</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
